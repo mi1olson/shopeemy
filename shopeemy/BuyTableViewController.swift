@@ -78,7 +78,7 @@ extension BuyTableViewController: UITableViewDataSource, UITableViewDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: Infinite2TableViewCell.identifier) as! Infinite2TableViewCell
             return cell
         case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Infinite3TableViewCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Infinite3TableViewCell") as! Infinite3TableViewCell
             return cell
         default:
             return UITableViewCell()
@@ -217,7 +217,7 @@ final class CollectionViewCell: UICollectionViewCell {
 
 
 
-final class Infinite3TableViewCell: UITableViewCell  {
+final class Infinite3TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate  {
     
     
     var nameArray = ["name 1", "name 2", "name 3", "name 4"]
@@ -225,13 +225,6 @@ final class Infinite3TableViewCell: UITableViewCell  {
     var imgNames = ["1.jpg","2.jpg","3.jpg","4.jpg"]
     
     
-    
-    
-}
-
-
-extension Infinite3TableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         
         return nameArray.count
@@ -247,9 +240,12 @@ extension Infinite3TableViewCell: UICollectionViewDataSource, UICollectionViewDe
         return cell
     }
     
-
-}
     
+    
+}
+
+
+
 
 
 
