@@ -1,0 +1,6 @@
+framework module Pods_shopeemy {
+  umbrella header "Pods-shopeemy-umbrella.h"
+
+  export *
+  module * { export * }
+}
