@@ -47,38 +47,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "214"
             endingLineNumber = "214">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "shopeemy.Infinite3TableViewCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; shopeemy.Infinite3TableViewCell"
-                  moduleName = "shopeemy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/iColson/Documents/shopeemy/shopeemy/BuyTableViewController.swift"
-                  timestampString = "510044656.358333"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "216"
-                  endingLineNumber = "216"
-                  offsetFromSymbolStart = "51">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "shopeemy.Infinite3TableViewCell.__allocating_init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; shopeemy.Infinite3TableViewCell"
-                  moduleName = "shopeemy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/iColson/Documents/shopeemy/shopeemy/BuyTableViewController.swift"
-                  timestampString = "510044656.360819"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

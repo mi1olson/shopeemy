@@ -78,7 +78,7 @@ extension BuyTableViewController: UITableViewDataSource, UITableViewDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: Infinite2TableViewCell.identifier) as! Infinite2TableViewCell
             return cell
         case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Infinite3TableViewCell") as! Infinite3TableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: Infinite3TableViewCell.identifier) as! Infinite3TableViewCell
             return cell
         default:
             return UITableViewCell()
@@ -217,13 +217,27 @@ final class CollectionViewCell: UICollectionViewCell {
 
 
 
-final class Infinite3TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate  {
+final class Infinite3TableViewCell: UITableViewCell  {
     
     
     var nameArray = ["name 1", "name 2", "name 3", "name 4"]
     var imgName = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
     var imgNames = ["1.jpg","2.jpg","3.jpg","4.jpg"]
     
+    static let identifier = "Infinite3TableViewCell"
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .UIDeviceOrientationDidChange, object: nil)
+    }
+    
+    
+    
+}
+
+
+extension Infinite3TableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         
@@ -234,15 +248,15 @@ final class Infinite3TableViewCell: UITableViewCell, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Infinite3TableViewCell", for: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as! CollectionViewCell
         cell.imgImage.image = imgName[indexPath.row]
         cell.lblName.text! = nameArray[indexPath.row]
         return cell
     }
     
     
-    
 }
+
 
 
 
