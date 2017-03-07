@@ -51,6 +51,17 @@ class METableViewController: UITableViewController {
         return 3
     }
 
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        let subviews = cell.subviews
+        if subviews.count >= 3 {
+            for subview in subviews {
+                if subview != cell.contentView {
+                    subview.removeFromSuperview()
+                    break
+                }
+            }
+        }
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -69,6 +80,7 @@ class METableViewController: UITableViewController {
         } else {
                 
                 let helps = tableView.dequeueReusableCell(withIdentifier: "Helps", for: indexPath)
+            
                 return helps
             
             }

@@ -14,13 +14,7 @@ import InfiniteCollectionView
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
 final class BuyTableViewController: UIViewController {
-    static func createFromStoryboard() ->
-        
-        BuyTableViewController {
-        let storyboard = UIStoryboard(name: "Pattern2", bundle: nil)
-        return storyboard.instantiateInitialViewController() as! BuyTableViewController
-    }
-    
+
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -29,6 +23,7 @@ final class BuyTableViewController: UIViewController {
             tableView.separatorStyle = .none
         }
     }
+
 
 
     
@@ -53,13 +48,13 @@ extension BuyTableViewController: UITableViewDataSource, UITableViewDelegate {
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
-        case 0, 1, 2, 3: return 1
+        case 0, 1, 2, 3, 4: return 1
         default: return 0
         }
     }
@@ -80,6 +75,9 @@ extension BuyTableViewController: UITableViewDataSource, UITableViewDelegate {
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: Infinite3TableViewCell.identifier) as! Infinite3TableViewCell
             return cell
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Infinite4TableViewCell.identifier) as! Infinite4TableViewCell
+            return cell
         default:
             return UITableViewCell()
         }
@@ -91,7 +89,8 @@ extension BuyTableViewController: UITableViewDataSource, UITableViewDelegate {
         case 0: return 80
         case 1: return 150
         case 2: return 120
-        case 3: return 200
+        case 3: return 400
+        case 4: return 500
         default: return 0
         }
     }
@@ -176,17 +175,24 @@ final class Infinite2TableViewCell: UITableViewCell {
             collectionView.register(ImageCollectionViewCell.nib, forCellWithReuseIdentifier: ImageCollectionViewCell.identifier)
         }
     }
+    
+
+    
+   
 }
 
 // MARK: - InfiniteCollectionViewDataSource, InfiniteCollectionViewDelegate
 extension Infinite2TableViewCell: InfiniteCollectionViewDataSource, InfiniteCollectionViewDelegate {
     func number(ofItems collectionView: UICollectionView) -> Int {
-        return 10
+        
+        return 4
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, dequeueForItemAt dequeueIndexPath: IndexPath, cellForItemAt usableIndexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCollectionViewCell.identifier, for: dequeueIndexPath) as! ImageCollectionViewCell
-        cell.configure(indexPath: usableIndexPath)
+        cell.configureTwo(indexPath: usableIndexPath)
         return cell
     }
     
@@ -208,6 +214,8 @@ final class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var lblName: UILabel!
     
+    @IBOutlet weak var imgEffect: UIVisualEffectView!
+    
 }
 
 
@@ -218,11 +226,10 @@ final class CollectionViewCell: UICollectionViewCell {
 final class Infinite3TableViewCell: UITableViewCell  {
     
     static let identifier = "Infinite3TableViewCell"
-
     
-    var nameArray = ["name 1", "name 2", "name 3", "name 4" ]
-    var imgName = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4")]
-    var imgNames = ["1.jpg","2.jpg","3.jpg","4.jpg"]
+    
+    var nameArray = ["Women's Clothing", "Beauty & Personl Care", "Women's Bags", "Men's Clothing", "Mobile & Gadgets", "Watches", "Home", "Toys", "Home Appliances"]
+    var imgName = [UIImage(named: "girl"), UIImage(named: "makeup"), UIImage(named: "bags"), UIImage(named: "clothing"), UIImage(named: "mobile"), UIImage(named: "watches"), UIImage(named: "living"), UIImage(named: "toys"), UIImage(named: "tools")]
     
     
     
@@ -247,6 +254,68 @@ extension Infinite3TableViewCell: UICollectionViewDataSource, UICollectionViewDe
         cell.lblName.text! = nameArray[indexPath.row]
         return cell
     }
+    
+    
+}
+
+
+
+
+
+final class CollectionViewCellTwo : UICollectionViewCell{
+    
+    
+    @IBOutlet weak var imgCellFour: UIImageView!
+    
+    @IBOutlet weak var lblNameOne: UILabel!
+    
+    @IBOutlet weak var lblNameTwo: UILabel!
+    
+}
+
+
+
+
+
+final class Infinite4TableViewCell: UITableViewCell {
+    
+    static let identifier = "Infinite4TableViewCell"
+    
+    var nameItem = ["Testing 1-1", "Testing 1-2", "Testing 1-3", "Testing 1-4"]
+    var imgName = [UIImage(named: "0"), UIImage(named: "3") , UIImage(named: "2"), UIImage(named: "1")]
+    var itemPrice = ["RM 10.00", "RM 19.99", "RM 15.99", "RM 12"]
+    
+
+    
+    
+    @IBOutlet var collectionViewOne: UICollectionView!
+    
+
+}
+
+
+extension Infinite4TableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+
+    
+
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        
+        return nameItem.count
+        
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCellTwo", for: indexPath) as! CollectionViewCellTwo
+        cell.imgCellFour.image = imgName[indexPath.row]
+        cell.lblNameOne.text! = nameItem[indexPath.row]
+        cell.lblNameTwo.text! = itemPrice[indexPath.row]
+        return cell
+    }
+    
     
     
 }

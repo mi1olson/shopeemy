@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B04A5F71E67C8F90058EC2F /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B04A5F61E67C8F90058EC2F /* FeedTableViewController.swift */; };
+		8B04A5F91E68012B0058EC2F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B04A5F81E68012B0058EC2F /* UserViewController.swift */; };
 		8B40CB9B1E5BD96D00407284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40CB9A1E5BD96D00407284 /* AppDelegate.swift */; };
 		8B40CB9D1E5BD96D00407284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40CB9C1E5BD96D00407284 /* ViewController.swift */; };
-		8B40CBA01E5BD96D00407284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B40CB9E1E5BD96D00407284 /* Main.storyboard */; };
 		8B40CBA21E5BD96D00407284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B40CBA11E5BD96D00407284 /* Assets.xcassets */; };
 		8B40CBA51E5BD96D00407284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B40CBA31E5BD96D00407284 /* LaunchScreen.storyboard */; };
 		8B40CBAD1E5BDA2B00407284 /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B40CBAC1E5BDA2B00407284 /* header.jpg */; };
 		8B40CBAF1E5BDA3700407284 /* header1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B40CBAE1E5BDA3700407284 /* header1.jpg */; };
+		8B56DCF41E6E652800BE14CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B56DCF31E6E652800BE14CF /* Main.storyboard */; };
 		8B78B1BF1E6414D8004365F4 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78B1BE1E6414D8004365F4 /* BuyTableViewController.swift */; };
 		8B8C214D1E5BE8C1005D7C7D /* Info 10-50-10-430.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C214C1E5BE8C1005D7C7D /* Info 10-50-10-430.plist */; };
 		8B93E8661E5BF3950050A60C /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93E8651E5BF3950050A60C /* CustomTabBarController.swift */; };
@@ -49,14 +51,16 @@
 		0402B9FA1A824C7F79071EEC /* Pods-shopeemy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopeemy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shopeemy/Pods-shopeemy.debug.xcconfig"; sourceTree = "<group>"; };
 		281D70088CCA5CB1AAA813A2 /* Pods_shopeemy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shopeemy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7B209AE8693BEE316756B5 /* Pods-shopeemy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopeemy.release.xcconfig"; path = "Pods/Target Support Files/Pods-shopeemy/Pods-shopeemy.release.xcconfig"; sourceTree = "<group>"; };
+		8B04A5F61E67C8F90058EC2F /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		8B04A5F81E68012B0058EC2F /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		8B40CB971E5BD96D00407284 /* shopeemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopeemy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B40CB9A1E5BD96D00407284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B40CB9C1E5BD96D00407284 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B40CB9F1E5BD96D00407284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B40CBA11E5BD96D00407284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B40CBA41E5BD96D00407284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B40CBAC1E5BDA2B00407284 /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
 		8B40CBAE1E5BDA3700407284 /* header1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header1.jpg; sourceTree = "<group>"; };
+		8B56DCF31E6E652800BE14CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8B78B1BE1E6414D8004365F4 /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
 		8B8C214C1E5BE8C1005D7C7D /* Info 10-50-10-430.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info 10-50-10-430.plist"; path = "../../../.Trash/Info 10-50-10-430.plist"; sourceTree = "<group>"; };
 		8B93E8651E5BF3950050A60C /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -115,7 +119,7 @@
 				8B93E8A21E5D9F050050A60C /* images */,
 				8B40CB9A1E5BD96D00407284 /* AppDelegate.swift */,
 				8B40CB9C1E5BD96D00407284 /* ViewController.swift */,
-				8B40CB9E1E5BD96D00407284 /* Main.storyboard */,
+				8B56DCF31E6E652800BE14CF /* Main.storyboard */,
 				8B93E8751E5D42890050A60C /* Me */,
 				8B40CBA11E5BD96D00407284 /* Assets.xcassets */,
 				8BCC9D251E641B5100D120C2 /* ImageCollectionViewCell.swift */,
@@ -128,6 +132,8 @@
 				8B93E8AF1E5D9F2D0050A60C /* CustomCollectionViewCell.swift */,
 				8B93E8B01E5D9F2D0050A60C /* CustomCollectionViewCell.xib */,
 				8B78B1BE1E6414D8004365F4 /* BuyTableViewController.swift */,
+				8B04A5F61E67C8F90058EC2F /* FeedTableViewController.swift */,
+				8B04A5F81E68012B0058EC2F /* UserViewController.swift */,
 			);
 			path = shopeemy;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 				TargetAttributes = {
 					8B40CB961E5BD96D00407284 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XYJ4KGF38J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -276,9 +283,9 @@
 				8B40CBAF1E5BDA3700407284 /* header1.jpg in Resources */,
 				8B40CBA21E5BD96D00407284 /* Assets.xcassets in Resources */,
 				8B93E8AE1E5D9F100050A60C /* 6.jpg in Resources */,
+				8B56DCF41E6E652800BE14CF /* Main.storyboard in Resources */,
 				8B93E8B21E5D9F2D0050A60C /* CustomCollectionViewCell.xib in Resources */,
 				8B40CBAD1E5BDA2B00407284 /* header.jpg in Resources */,
-				8B40CBA01E5BD96D00407284 /* Main.storyboard in Resources */,
 				8BCC9D281E641B5100D120C2 /* ImageCollectionViewCell.xib in Resources */,
 				8B93E8AA1E5D9F100050A60C /* 2.jpg in Resources */,
 				8B93E8AC1E5D9F100050A60C /* 4.jpg in Resources */,
@@ -343,11 +350,13 @@
 			files = (
 				8B40CB9D1E5BD96D00407284 /* ViewController.swift in Sources */,
 				8BCC9D271E641B5100D120C2 /* ImageCollectionViewCell.swift in Sources */,
+				8B04A5F91E68012B0058EC2F /* UserViewController.swift in Sources */,
 				8B93E8B11E5D9F2D0050A60C /* CustomCollectionViewCell.swift in Sources */,
 				8B40CB9B1E5BD96D00407284 /* AppDelegate.swift in Sources */,
 				8B93E87E1E5D8CE00050A60C /* BuyTableViewController_old.swift in Sources */,
 				8B93E8661E5BF3950050A60C /* CustomTabBarController.swift in Sources */,
 				8B93E8B51E5DA05C0050A60C /* RNImageViewPlayer.swift in Sources */,
+				8B04A5F71E67C8F90058EC2F /* FeedTableViewController.swift in Sources */,
 				8B93E8741E5D2A440050A60C /* HELPTableViewController.swift in Sources */,
 				8B93E8701E5C2AAB0050A60C /* METableViewController.swift in Sources */,
 				8B78B1BF1E6414D8004365F4 /* BuyTableViewController.swift in Sources */,
@@ -358,14 +367,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8B40CB9E1E5BD96D00407284 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B40CB9F1E5BD96D00407284 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8B40CBA31E5BD96D00407284 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -473,8 +474,9 @@
 			baseConfigurationReference = 0402B9FA1A824C7F79071EEC /* Pods-shopeemy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XYJ4KGF38J;
 				INFOPLIST_FILE = shopeemy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ic.shopeemy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,8 +489,9 @@
 			baseConfigurationReference = 4C7B209AE8693BEE316756B5 /* Pods-shopeemy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XYJ4KGF38J;
 				INFOPLIST_FILE = shopeemy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ic.shopeemy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
