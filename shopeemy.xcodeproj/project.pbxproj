@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B04A5F71E67C8F90058EC2F /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B04A5F61E67C8F90058EC2F /* FeedTableViewController.swift */; };
 		8B04A5F91E68012B0058EC2F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B04A5F81E68012B0058EC2F /* UserViewController.swift */; };
+		8B1553261E7F7DDD00990645 /* MenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1553251E7F7DDD00990645 /* MenTableViewController.swift */; };
 		8B40CB9B1E5BD96D00407284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40CB9A1E5BD96D00407284 /* AppDelegate.swift */; };
 		8B40CB9D1E5BD96D00407284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40CB9C1E5BD96D00407284 /* ViewController.swift */; };
 		8B40CBA21E5BD96D00407284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B40CBA11E5BD96D00407284 /* Assets.xcassets */; };
@@ -17,7 +18,6 @@
 		8B40CBAF1E5BDA3700407284 /* header1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B40CBAE1E5BDA3700407284 /* header1.jpg */; };
 		8B56DCF41E6E652800BE14CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B56DCF31E6E652800BE14CF /* Main.storyboard */; };
 		8B78B1BF1E6414D8004365F4 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78B1BE1E6414D8004365F4 /* BuyTableViewController.swift */; };
-		8B8C214D1E5BE8C1005D7C7D /* Info 10-50-10-430.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C214C1E5BE8C1005D7C7D /* Info 10-50-10-430.plist */; };
 		8B93E8661E5BF3950050A60C /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93E8651E5BF3950050A60C /* CustomTabBarController.swift */; };
 		8B93E8701E5C2AAB0050A60C /* METableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93E86F1E5C2AAB0050A60C /* METableViewController.swift */; };
 		8B93E8741E5D2A440050A60C /* HELPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93E8731E5D2A440050A60C /* HELPTableViewController.swift */; };
@@ -53,6 +53,7 @@
 		4C7B209AE8693BEE316756B5 /* Pods-shopeemy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopeemy.release.xcconfig"; path = "Pods/Target Support Files/Pods-shopeemy/Pods-shopeemy.release.xcconfig"; sourceTree = "<group>"; };
 		8B04A5F61E67C8F90058EC2F /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		8B04A5F81E68012B0058EC2F /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		8B1553251E7F7DDD00990645 /* MenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenTableViewController.swift; sourceTree = "<group>"; };
 		8B40CB971E5BD96D00407284 /* shopeemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopeemy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B40CB9A1E5BD96D00407284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B40CB9C1E5BD96D00407284 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,8 +62,8 @@
 		8B40CBAC1E5BDA2B00407284 /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
 		8B40CBAE1E5BDA3700407284 /* header1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header1.jpg; sourceTree = "<group>"; };
 		8B56DCF31E6E652800BE14CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8B5B4D331E710FC600861CEF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B78B1BE1E6414D8004365F4 /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
-		8B8C214C1E5BE8C1005D7C7D /* Info 10-50-10-430.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info 10-50-10-430.plist"; path = "../../../.Trash/Info 10-50-10-430.plist"; sourceTree = "<group>"; };
 		8B93E8651E5BF3950050A60C /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		8B93E86F1E5C2AAB0050A60C /* METableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = METableViewController.swift; sourceTree = "<group>"; };
 		8B93E8731E5D2A440050A60C /* HELPTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HELPTableViewController.swift; sourceTree = "<group>"; };
@@ -124,8 +125,8 @@
 				8B40CBA11E5BD96D00407284 /* Assets.xcassets */,
 				8BCC9D251E641B5100D120C2 /* ImageCollectionViewCell.swift */,
 				8BCC9D261E641B5100D120C2 /* ImageCollectionViewCell.xib */,
+				8B5B4D331E710FC600861CEF /* Info.plist */,
 				8B40CBA31E5BD96D00407284 /* LaunchScreen.storyboard */,
-				8B8C214C1E5BE8C1005D7C7D /* Info 10-50-10-430.plist */,
 				8B93E8651E5BF3950050A60C /* CustomTabBarController.swift */,
 				8B93E87D1E5D8CE00050A60C /* BuyTableViewController_old.swift */,
 				8BC8E1991E640AD5009D1BD2 /* JWAutoScrollView.swift */,
@@ -134,6 +135,7 @@
 				8B78B1BE1E6414D8004365F4 /* BuyTableViewController.swift */,
 				8B04A5F61E67C8F90058EC2F /* FeedTableViewController.swift */,
 				8B04A5F81E68012B0058EC2F /* UserViewController.swift */,
+				8B1553251E7F7DDD00990645 /* MenTableViewController.swift */,
 			);
 			path = shopeemy;
 			sourceTree = "<group>";
@@ -278,7 +280,6 @@
 			files = (
 				8B93E8AD1E5D9F100050A60C /* 5.jpg in Resources */,
 				8B93E8AB1E5D9F100050A60C /* 3.jpg in Resources */,
-				8B8C214D1E5BE8C1005D7C7D /* Info 10-50-10-430.plist in Resources */,
 				8B40CBA51E5BD96D00407284 /* LaunchScreen.storyboard in Resources */,
 				8B40CBAF1E5BDA3700407284 /* header1.jpg in Resources */,
 				8B40CBA21E5BD96D00407284 /* Assets.xcassets in Resources */,
@@ -352,6 +353,7 @@
 				8BCC9D271E641B5100D120C2 /* ImageCollectionViewCell.swift in Sources */,
 				8B04A5F91E68012B0058EC2F /* UserViewController.swift in Sources */,
 				8B93E8B11E5D9F2D0050A60C /* CustomCollectionViewCell.swift in Sources */,
+				8B1553261E7F7DDD00990645 /* MenTableViewController.swift in Sources */,
 				8B40CB9B1E5BD96D00407284 /* AppDelegate.swift in Sources */,
 				8B93E87E1E5D8CE00050A60C /* BuyTableViewController_old.swift in Sources */,
 				8B93E8661E5BF3950050A60C /* CustomTabBarController.swift in Sources */,

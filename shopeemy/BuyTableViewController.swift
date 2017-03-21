@@ -24,11 +24,10 @@ final class BuyTableViewController: UIViewController {
         }
     }
 
-
-
     
-
 }
+
+
 
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
@@ -94,6 +93,8 @@ extension BuyTableViewController: UITableViewDataSource, UITableViewDelegate {
         default: return 0
         }
     }
+    
+   
 }
 
 
@@ -136,6 +137,8 @@ final class InfiniteTableViewCell: UITableViewCell {
         collectionView.layoutIfNeeded()
         collectionView.setNeedsLayout()
     }
+
+
 }
 
 
@@ -206,10 +209,13 @@ extension Infinite2TableViewCell: InfiniteCollectionViewDataSource, InfiniteColl
         collectionView.layoutIfNeeded()
         collectionView.setNeedsLayout()
     }
+    
+    
 }
 
 
 final class CollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var imgImage: UIImageView!
     
     @IBOutlet weak var lblName: UILabel!
@@ -217,9 +223,6 @@ final class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imgEffect: UIVisualEffectView!
     
 }
-
-
-
 
 
 
@@ -231,13 +234,12 @@ final class Infinite3TableViewCell: UITableViewCell  {
     var nameArray = ["Women's Clothing", "Beauty & Personl Care", "Women's Bags", "Men's Clothing", "Mobile & Gadgets", "Watches", "Home", "Toys", "Home Appliances"]
     var imgName = [UIImage(named: "girl"), UIImage(named: "makeup"), UIImage(named: "bags"), UIImage(named: "clothing"), UIImage(named: "mobile"), UIImage(named: "watches"), UIImage(named: "living"), UIImage(named: "toys"), UIImage(named: "tools")]
     
-    
-    
+
     
 }
 
 
-extension Infinite3TableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+extension Infinite3TableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         
@@ -246,19 +248,29 @@ extension Infinite3TableViewCell: UICollectionViewDataSource, UICollectionViewDe
     }
     
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+        
+        
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as! CollectionViewCell
         cell.imgImage.image = imgName[indexPath.row]
         cell.lblName.text! = nameArray[indexPath.row]
         return cell
+    
+        
+    }
+
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {
+        
+        
+        print("didSelectItemAt: \(indexPath.item)")
+        
+        
     }
     
     
 }
-
-
 
 
 
@@ -291,15 +303,13 @@ final class Infinite4TableViewCell: UITableViewCell {
     @IBOutlet var collectionViewOne: UICollectionView!
     
 
+    
 }
 
 
 extension Infinite4TableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     
 
-    
-
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         
         return nameItem.count
@@ -319,7 +329,6 @@ extension Infinite4TableViewCell: UICollectionViewDataSource, UICollectionViewDe
     
     
 }
-
 
 
 
