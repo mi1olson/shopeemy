@@ -24,6 +24,8 @@ final class BuyTableViewController: UIViewController {
         }
     }
 
+    // Add to your BuyTableViewController class block, not here inside extension block
+    var selectedIndexPath: IndexPath?
     
 }
 
@@ -94,6 +96,15 @@ extension BuyTableViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+
+    // Al the following at line 96
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndexPath = indexPath
+        
+        self.performSegue(withIdentifier: "MenViewController", sender: self)
+    }
+    
+
    
 }
 
@@ -202,6 +213,8 @@ extension Infinite2TableViewCell: InfiniteCollectionViewDataSource, InfiniteColl
     func infiniteCollectionView(_ collectionView: UICollectionView, didSelectItemAt usableIndexPath: IndexPath) {
         print("didSelectItemAt: \(usableIndexPath.item)")
     }
+    
+    
     
     func rotate(_ notification: Notification) {
         collectionView.collectionViewLayout.invalidateLayout()
